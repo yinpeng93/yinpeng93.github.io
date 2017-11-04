@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Spring Cloud学习-服务注册与发现]]></title>
       <url>/2017/11/04/springcloud/Spring%20Cloud%E5%AD%A6%E4%B9%A0-%E6%90%AD%E5%BB%BA%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/</url>
-      <content type="html"><![CDATA[<h1 id="Spring-Cloud简介"><a href="#Spring-Cloud简介" class="headerlink" title="Spring Cloud简介"></a>Spring Cloud简介</h1><p><strong>spring cloud 为开发人员提供了快速构建分布式系统的一些工具</strong>，包括配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话等等。</p>
+      <content type="html"><![CDATA[<h1 id="Spring-Cloud简介"><a href="#Spring-Cloud简介" class="headerlink" title="Spring Cloud简介"></a>Spring Cloud简介</h1><p><strong>spring cloud 为开发人员提供了快速构建分布式系统的一些工具</strong>，包括配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话等等。<br><a id="more"></a></p>
 <h1 id="创建服务注册中心"><a href="#创建服务注册中心" class="headerlink" title="创建服务注册中心"></a>创建服务注册中心</h1><p>这里我们需要选用Spring Cloud Netflix组件中的<code>Eureka</code></p>
 <h2 id="创建一个spring-boot工程"><a href="#创建一个spring-boot工程" class="headerlink" title="创建一个spring boot工程"></a>创建一个spring boot工程</h2><p>选取<code>Eureka Server</code>,如下图</p>
 <p><img src="http://oxrk6nknk.bkt.clouddn.com/eureka-server.jpg" alt="eureka-server"></p>
