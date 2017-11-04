@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Spring Cloud学习-服务注册与发现]]></title>
-      <url>/2017/11/04/springcloud/Spring%20Cloud%E5%AD%A6%E4%B9%A0-%E6%90%AD%E5%BB%BA%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/</url>
+      <url>/2017/11/04/springcloud/Spring%20Cloud%E5%AD%A6%E4%B9%A0(%E4%B8%80)-%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/</url>
       <content type="html"><![CDATA[<h1 id="Spring-Cloud简介"><a href="#Spring-Cloud简介" class="headerlink" title="Spring Cloud简介"></a>Spring Cloud简介</h1><p><strong>spring cloud 为开发人员提供了快速构建分布式系统的一些工具</strong>，包括配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话等等。<br><a id="more"></a></p>
 <h1 id="创建服务注册中心"><a href="#创建服务注册中心" class="headerlink" title="创建服务注册中心"></a>创建服务注册中心</h1><p>这里我们需要选用Spring Cloud Netflix组件中的<code>Eureka</code></p>
 <h2 id="创建一个spring-boot工程"><a href="#创建一个spring-boot工程" class="headerlink" title="创建一个spring boot工程"></a>创建一个spring boot工程</h2><p>选取<code>Eureka Server</code>,如下图</p>
@@ -28,7 +28,7 @@
 <p><code>${random.int[1000,1100]}</code>随机端口生成，范围在1000-1100，我们启动多个服务时候可以不用修改端口号，再启动。<br><strong><code>注意</code></strong>:<code>http://localhost:1001/eureka/</code>，中的<code>eureka</code>是固定的，不能修改。</p>
 <h2 id="启动应用"><a href="#启动应用" class="headerlink" title="启动应用"></a>启动应用</h2><p>浏览访问<code>http://localhost:1001/</code>，效果如下图：<br><img src="http://oxrk6nknk.bkt.clouddn.com/eureka-server-emergency.jpg" alt="eureka-server"><br>我们可以看到刚刚创建的service-hi，这个服务已经被注册到这个服务当中了，但是我们也看到了上面有警告信息，该警告是触发了Eureka Server的自我保护机制，可以使用<code>eureka.server.enable-self-preservation=false</code>来关闭eureka server保护机制，以确保注册中心可以将不可用的实例正确剔除。<br><code>eureka server自我保护机制</code>:Eureka Server在运行期间，会统计心跳失败的比例在15分钟之内是否低于85%,Eureka Server会将当前实例注册信息保护起来，让这些实例不会过期，尽可能保护这些祖册信息。但是，在这段保护期间内实例若出现问题，那么客户端很容易拿到实际已经不存在的服务实例，会出现条用失败的情况，所以客户端必须要有容错机制，比如使用请求重试、断路器等机制。</p>
 <blockquote>
-<p>参考文档<br><a href="http://blog.csdn.net/forezp/article/details/69696915" target="_blank" rel="external">史上最简单的 SpringCloud 教程 | 第一篇： 服务的注册与发现（Eureka）</a><br>      <a href="http://blog.didispace.com/springcloud1/" target="_blank" rel="external">Spring Cloud构建微服务架构（一）服务注册与发现</a><br><br>      Spring Cloud微服务实战 </p>
+<p>参考文档<br><a href="http://blog.csdn.net/forezp/article/details/69696915" target="_blank" rel="external">史上最简单的 SpringCloud 教程 | 第一篇： 服务的注册与发现（Eureka）</a><br>      <a href="http://blog.didispace.com/springcloud1/" target="_blank" rel="external">Spring Cloud构建微服务架构（一）服务注册与发现</a><br>      Spring Cloud微服务实战 </p>
 </blockquote>
 ]]></content>
       
