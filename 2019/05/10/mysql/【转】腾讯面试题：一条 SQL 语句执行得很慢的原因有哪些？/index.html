@@ -14,20 +14,19 @@
 <meta name="author" content="尹鹏" />
 
 
-    
-    
 
-
-<meta name="description" content="每天进步一点">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YP&#39;s Blog">
-<meta property="og:url" content="http://yinpeng93.github.io/index.html">
+<meta name="description" content="【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？转自文章链接：https://mp.weixin.qq.com/s/bAzEsUQBi02Tfuo-n0k_lA 帅地 ImportNew;) 前天 （给ImportNew加星标，提高Java技能）  转自：苦逼的码农  最近的招聘季，腾讯有一道面试题：一条SQL语句执行得很慢的原因有哪些？ 其实，这个问题可以涉及到 MySQL 的很多核">
+<meta name="keywords" content="mysql,sql,索引">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？">
+<meta property="og:url" content="http://yinpeng93.github.io/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/index.html">
 <meta property="og:site_name" content="YP&#39;s Blog">
-<meta property="og:description" content="每天进步一点">
+<meta property="og:description" content="【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？转自文章链接：https://mp.weixin.qq.com/s/bAzEsUQBi02Tfuo-n0k_lA 帅地 ImportNew;) 前天 （给ImportNew加星标，提高Java技能）  转自：苦逼的码农  最近的招聘季，腾讯有一道面试题：一条SQL语句执行得很慢的原因有哪些？ 其实，这个问题可以涉及到 MySQL 的很多核">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-05-10T10:27:49.807Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YP&#39;s Blog">
-<meta name="twitter:description" content="每天进步一点">
+<meta name="twitter:title" content="【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？">
+<meta name="twitter:description" content="【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？转自文章链接：https://mp.weixin.qq.com/s/bAzEsUQBi02Tfuo-n0k_lA 帅地 ImportNew;) 前天 （给ImportNew加星标，提高Java技能）  转自：苦逼的码农  最近的招聘季，腾讯有一道面试题：一条SQL语句执行得很慢的原因有哪些？ 其实，这个问题可以涉及到 MySQL 的很多核">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -55,13 +54,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>YP&#39;s Blog</title>
+<title>【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？ | YP&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -70,8 +67,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -274,9 +271,7 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/" class="article-date">
@@ -294,12 +289,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/">【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？</a>
+    <h1 class="article-title" itemprop="name">
+      【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sql/">sql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/索引/">索引</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -401,163 +411,85 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/mysql/">mysql</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sql/">sql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/索引/">索引</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-springcloud/Spring Cloud学习(一)-服务注册与发现" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/11/04/springcloud/Spring Cloud学习(一)-服务注册与发现/" class="article-date">
-      <time datetime="2017-11-04T07:25:02.000Z" itemprop="datePublished">2017-11-04</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/04/springcloud/Spring Cloud学习(一)-服务注册与发现/">Spring Cloud学习-服务注册与发现</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h1 id="Spring-Cloud简介"><a href="#Spring-Cloud简介" class="headerlink" title="Spring Cloud简介"></a>Spring Cloud简介</h1><p><strong>spring cloud 为开发人员提供了快速构建分布式系统的一些工具</strong>，包括配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话等等。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/spring-cloud/">spring cloud</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/eureka/">eureka</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud-netflix/">spring cloud netflix</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2017/11/04/springcloud/Spring Cloud学习(一)-服务注册与发现/#more">more >></a>
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/">【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">尹鹏</a></p>
+        <p><span>Created:</span>2019-05-10, 18:27:00</p>
+        <p><span>Updated:</span>2019-05-10, 18:27:49</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/" title="【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？">http://yinpeng93.github.io/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/</a>
+            <span class="copy-path" data-clipboard-text="From http://yinpeng93.github.io/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/　　By 尹鹏" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-springcloud/关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/10/13/springcloud/关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题/" class="article-date">
-      <time datetime="2017-10-13T07:25:02.000Z" itemprop="datePublished">2017-10-13</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/13/springcloud/关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题/">关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>这两天公司让学习spring cloud,我在项目中用的springcloud版本是Dalston.SR3版本。当我在学习用feign客户端做断路器的时候，发现feign客户端并没有降级去调用回调类，而抛出这样的错误。<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/spring-cloud/">spring cloud</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dalston-sr3/">dalston sr3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2017/10/13/springcloud/关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题/#more">more >></a>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/11/04/springcloud/Spring Cloud学习(一)-服务注册与发现/">
+                    Spring Cloud学习-服务注册与发现
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#【转】腾讯面试题：一条-SQL-语句执行得很慢的原因有哪些？"><span class="toc-number">1.</span> <span class="toc-text">【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？　| YP's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -565,9 +497,47 @@
 
 
 
+    
+        <section class="youyan" id="comments">
+    <script>
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = 'http://v2.uyan.cc/code/uyan.js?uid=2146681';
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
 
-  
-  
+    <div id="uyan_frame"></div>
+</section>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/11/04/springcloud/Spring Cloud学习(一)-服务注册与发现/" title="Next: Spring Cloud学习-服务注册与发现">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/05/10/mysql/【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？/">【转】腾讯面试题：一条 SQL 语句执行得很慢的原因有哪些？</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/springcloud/Spring Cloud学习(一)-服务注册与发现/">Spring Cloud学习-服务注册与发现</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/springcloud/关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题/">关于Dalston.SR3版本的spring cloud，用feign客户端调用服务hystrix不能生效的问题</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -621,10 +591,6 @@
         })
     </script>
 
-
-    
-
-     
 
 
 
